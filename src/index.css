@@ -1,13 +1,113 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2? family= Noto+Sans:ital,wght@0,100;0,200;0,500;1,400 & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Roboto:ital,wght@1,300 & display=swap');
+@import "react-slideshow-image/dist/styles.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  html{
+    font-family: 'Noto Sans',sans-serif;
+  }
+  
+}
+.navbar{
+  font-size: 1.4rem;
+}
+.img1{
+  margin-top: 10rem;
+}
+.logo img{
+  height:10rem;
+  display: flex;
+  align-items: center;
+  margin-left: 35rem;
+}
+.text{
+  position: relative;
+  margin-bottom: 5rem;
+}
+.text ul{
+  margin-top: 5rem;
+  display: flex;
+  position: absolute;
+  margin-left: 30rem;
+}
+.foot{
+  position:relative;
+  height:20rem;
+  background-color: gray;
+ 
+}
+.footer{
+  margin-top: 5rem;
+  display: flex;
+  position: absolute;
+  margin-left: 30rem;
+
+}
+.footer li{
+  color: aliceblue;
+  margin-top: -2rem;
+}
+div .slide-container{
+  height:100rem;
+}
+.icon{
+  position:relative
+}
+.icon1{
+  position: absolute;
+  margin-left:8rem ;
+  margin-top: 5rem;
+}
+.icon2{
+  position: absolute;
+  margin-left: 87rem;
+  margin-top: -8rem;
+}
+.icon3{
+  position: absolute;
+  margin-left: 87rem;
+  margin-top: 5rem;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* --------------------------------caroussel---------------------------------------- */
+
+/* ----------------------------------Text.jsx-------------------------------------- */
+.para{
+  margin-top: 5rem;
+  margin:13rem;
+  font-size: 1.6rem;
+  font-family: "roboto",sans-serif;
+  border:1px rgb(21, 21, 20) solid;
+  background-color:rgb(245, 245, 233);
+  padding: 1rem;
+}
+/* -------------------------------------Footer------------------------------------------ */
+.footer{
+  font-size: 1.6rem;
+  gap:3rem;
+ margin-left: 15rem;
+}
+.foot {
+  position: relative;
+}
+.bankcard {
+  position:absolute;
+  margin-top: 10rem;
+  margin-left: 5rem;
+  color:aliceblue
+
+}
+.bankcard:last-child{
+  margin-top: 12rem;
+}
+.follow{
+  position:absolute;
+  margin-top: 10rem;
+  margin-left:75rem ;
+ text-align: left;
+ color:aliceblue
 }
